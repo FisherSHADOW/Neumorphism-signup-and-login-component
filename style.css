@@ -14,19 +14,18 @@
     font-family: xthin ;
     src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-ExtraLight.ttf);
 }
-
-
 body{
     background: #dadada;
     overflow: hidden;
 }
+/* main container */
 .signup-container{
     width: 400px;
     height: 500px;
     margin: auto;
     text-align: center;
     position: relative;
-    top: 100;
+    top: 100px;
     border-radius: 26px;
     border-radius: 20px;
     border-radius: 44px;
@@ -43,22 +42,24 @@ h1{
     padding-top: 10px;
     margin-top: 10px;
 }
+/* footer text */
 p{
     position: absolute; 
     bottom: -5px;
-    left: 82px;
+    left: 85px;
     font-family: xthin;
+    font-size: 14px;
 }
 a{
     text-decoration: none;
     color: rgb(255, 72, 0);
 }
+/* main form */
 form{
     width: 300px;
     height: 500px;
     gap: 10px;
     margin-top: 30;
-
 }
   .form-container{
     position: absolute;
@@ -119,7 +120,6 @@ form{
     position: absolute;
     left: 64px;
     margin-top: 25px;
-    transition: 0.5s;
     border-radius: 45px;
     border-radius: 38px;
     background: linear-gradient(160deg, #ff8454, #ffa860);
@@ -132,19 +132,21 @@ form{
     background: linear-gradient(160deg, #ffa860, #ff8454);
     box-shadow: none;
 }
-.icon-container{
+/* icons */
+.icon-container{    
     transition : 300ms ease-in;
-    transform: translateY(0);
+    transform: translateY();
     position: absolute;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     bottom: 70px;
-    left: 92px;
-
+    left: 80px;
 }
 .icon-container :hover{
     box-shadow: none;
+    transition : 200ms ease-in;
+    transform: translateY(2px);
 }
 .icon-box1{
     width:40px;
@@ -178,6 +180,7 @@ img{
     position: absolute;
     left:5px;
     top: 6px;   
+    
 }
 .underline{
     width: 400px;
@@ -187,4 +190,17 @@ img{
     position: absolute;
     bottom: 120px;
     right: 0;
+}
+/* creator */
+.attribution {
+    font-size: 9px;
+    font-family: xbold;
+    color: hsl(0, 0%, 24%);
+    position: absolute;
+    bottom: 20px;
+    left:710px;
+}
+.attribution a{
+    color: hsl(0, 0%, 24%);
+    text-decoration: underline;
 }

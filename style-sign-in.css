@@ -1,0 +1,212 @@
+@font-face {
+    font-family: xxbold ;
+    src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Black.ttf);
+}
+@font-face {
+    font-family: xbold ;
+    src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Bold.ttf);
+}
+@font-face {
+    font-family: xregular ;
+    src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Regular.ttf);
+}
+@font-face {
+    font-family: xthin ;
+    src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-ExtraLight.ttf);
+}
+
+
+body{
+    background: #dadada;
+    overflow: hidden;
+}
+/* main container */
+.signup-container{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    border-radius: 26px;
+    border-radius: 20px;
+    border-radius: 44px;
+    background: linear-gradient(45deg, #dfdfdf, #ffffff);
+    box-shadow:  9px -9px 18px #9c9c9c,
+                 -9px 9px 18px #afafaf;
+}
+/* title */
+h1{
+    font-family: xregular;
+    color: #242424;
+    text-align: left;
+    margin-left: 10px;
+    padding-top: 10px;
+    margin-top: 60px;
+}
+/* footer text */
+p{
+    position: absolute; 
+    bottom: -5px;
+    left: 95px;
+    font-family: xthin;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 72, 0);
+}
+/* main form */
+
+form{
+    position: absolute;
+    top: 130px;
+    width: 300px;
+    height: 500px;
+    gap: 10px;
+
+}
+  .form-container{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10.5%;
+    display: flex-box;
+    flex-direction: column;
+    padding: 50;
+  }
+  :placeholder-shown{
+    font-family: xbold;
+    width: 200px;
+    height: 25px;
+    padding-left: 15px;
+    display: flex;
+    margin-left:45px;
+    margin-top: 25px;
+    text-align: left;
+    border-radius: 20px;
+    background: #90ffffd0;
+    box-shadow: inset 7px 7px 14px #5f5757,
+            inset -7px -7px 14px #ffffff;
+  }
+  input{
+    font-family: xbold;
+    color: #5f5757;
+    text-align: center;
+    caret-color: rgb(255, 72, 0);
+    background: #88c1ec;
+    outline: none;
+    width: 205px;
+    height: 25px;
+    position: relative;
+    padding: 5px 10px;
+    display: flex;
+    margin-left: 45px;
+    margin-top: 25px;
+    border-radius: 20px;
+    background: linear-gradient(160deg, #85fdc1, #7afff8);
+    box-shadow: inset 7px 7px 14px #5f5757,
+            inset -7px -7px 14px #ffffff;
+    border: none;
+  }
+  input::placeholder{
+    color: gray;
+    border: none;
+  }
+  .btn{
+    font-family: xxbold;
+    padding: 9px 70px;
+    color: #242424;
+    outline: none;
+    transition : 300ms ease-in;
+    transform: translateY(0);
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: 64px;
+    margin-top: 25px;
+    transition: 0.5s;
+    border-radius: 45px;
+    border-radius: 38px;
+    background: linear-gradient(160deg, #ff8454, #ffa860);
+    box-shadow:  5px 4px 19px #797979,
+             -5px -4px 20px #ffffff;
+             border: none;
+}
+.btn:hover{
+    font-family: xxbold;
+    background: linear-gradient(160deg, #ffa860, #ff8454);
+    box-shadow: none;
+}
+/* icons */
+.icon-container{
+    transition : 300ms ease-in;
+    transform: translateY(0);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    bottom: 70px;
+    left: 80px;
+
+}
+.icon-container :hover{
+    box-shadow: none;
+    transition : 200ms ease-in;
+    transform: translateY(2px);
+}
+.icon-box1{
+    width:40px;
+    height: 40px;
+    background-color: rgb(233, 233, 233);;
+    border-radius:50%;
+    position: relative;
+    box-shadow:  5px 4px 19px #797979,
+                -5px -4px 20px #ffffff;
+}
+.icon-box2{
+    width:40px;
+    height: 40px;
+    background-color: rgb(233, 233, 233);
+    border-radius:50%;
+    position: relative;
+    box-shadow:  5px 4px 19px #797979,
+                -5px -4px 20px #ffffff;
+}
+.icon-box3{
+    width:40px;
+    height: 40px;
+    background-color: rgb(233, 233, 233);
+    border-radius:50%;
+    position: relative;
+    box-shadow:  5px 4px 19px #797979,
+                -5px -4px 20px #ffffff;
+}
+img{
+    width:30px;
+    position: absolute;
+    left:5px;
+    top: 6px;   
+}
+.underline{
+    width: 400px;
+    border-top: 1px solid rgb(105, 105, 105);
+
+    opacity: 0.4;
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+}
+/* creator */
+.attribution {
+    font-size: 9px;
+    font-family: xbold;
+    color: hsl(0, 0%, 24%);
+    position: absolute;
+    bottom: 20px;
+    left:710px;
+}
+.attribution a{
+    color: hsl(0, 0%, 24%);
+    text-decoration: underline;
+}
