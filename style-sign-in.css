@@ -197,17 +197,3 @@ img{
     bottom: 120px;
     right: 0;
 }
-/* creator */
-.attribution {
-    font-size: 9px;
-    font-family: xbold;
-    color: hsl(0, 0%, 24%);
-    position: absolute;
-    bottom: 60px;
-    left:900px;
-    text-decoration: underline;
-}
-.attribution a{
-    color: hsl(0, 0%, 24%);
-    text-decoration: underline;
-}
