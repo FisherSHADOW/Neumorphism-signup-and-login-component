@@ -37,7 +37,7 @@ body{
 /* title */
 h1{
     font-family: xregular;
-    color: #797979;
+    color: #242424;
     text-align: left;
     margin-left: 10px;
     padding-top: 10px;
@@ -110,7 +110,7 @@ form{
   .btn{
     font-family: xxbold;
     padding: 9px 70px;
-    color:hsl(0, 0%, 13%);
+    color: #242424;
     outline: none;
     transition : 300ms ease-in;
     transform: translateY(0);
