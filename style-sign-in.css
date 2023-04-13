@@ -85,7 +85,6 @@ form{
     margin-top: 25px;
     text-align: left;
     border-radius: 20px;
-    background: #90ffffd0;
     box-shadow: inset 7px 7px 14px #5f5757,
             inset -7px -7px 14px #ffffff;
   }
@@ -94,7 +93,6 @@ form{
     color: #5f5757;
     text-align: center;
     caret-color: rgb(255, 72, 0);
-    background: #88c1ec;
     outline: none;
     width: 205px;
     height: 25px;
@@ -104,7 +102,6 @@ form{
     margin-left: 45px;
     margin-top: 25px;
     border-radius: 20px;
-    background: linear-gradient(160deg, #85fdc1, #7afff8);
     box-shadow: inset 7px 7px 14px #5f5757,
             inset -7px -7px 14px #ffffff;
     border: none;
