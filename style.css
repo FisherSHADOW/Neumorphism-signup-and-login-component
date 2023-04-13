@@ -1,5 +1,23 @@
+@font-face {
+    font-family: xxbold ;
+    src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Black.ttf);
+}
+@font-face {
+    font-family: xbold ;
+    src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Bold.ttf);
+}
+@font-face {
+    font-family: xregular ;
+    src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Regular.ttf);
+}
+@font-face {
+    font-family: xthin ;
+    src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-ExtraLight.ttf);
+}
+
+
 body{
-    background: #f3f3f3;
+    background: #dadada;
     overflow: hidden;
 }
 .signup-container{
@@ -12,25 +30,32 @@ body{
     border-radius: 26px;
     border-radius: 20px;
     border-radius: 44px;
-    background: linear-gradient(45deg, #ffffff, #d4d4d4);
+    background: linear-gradient(45deg, #dfdfdf, #ffffff);
     box-shadow:  9px -9px 18px #9c9c9c,
                  -9px 9px 18px #afafaf;
 }
 /* title */
 h1{
+    font-family: xregular;
+    color: #797979;
     text-align: left;
     margin-left: 10px;
     padding-top: 10px;
     margin-top: 10px;
-    
+}
+p{
+    position: absolute; 
+    bottom: -5px;
+    left: 82px;
+    font-family: xthin;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 72, 0);
 }
 form{
     width: 300px;
     height: 500px;
-    /* margin: auto;
-    margin-top: 45px;
-    display: flex;
-    flex-direction: column; */
     gap: 10px;
     margin-top: 30;
 
@@ -45,6 +70,7 @@ form{
     padding: 50;
   }
   :placeholder-shown{
+    font-family: xbold;
     width: 200px;
     height: 25px;
     padding-left: 15px;
@@ -58,9 +84,11 @@ form{
             inset -7px -7px 14px #ffffff;
   }
   input{
+    font-family: xbold;
+    color: #5f5757;
+    text-align: center;
     caret-color: rgb(255, 72, 0);
     background: #88c1ec;
-    color: rgb(24, 24, 24);
     outline: none;
     width: 205px;
     height: 25px;
@@ -70,7 +98,7 @@ form{
     margin-left: 45px;
     margin-top: 25px;
     border-radius: 20px;
-    background: #5bffd6;
+    background: linear-gradient(160deg, #85fdc1, #7afff8);
     box-shadow: inset 7px 7px 14px #5f5757,
             inset -7px -7px 14px #ffffff;
     border: none;
@@ -80,6 +108,7 @@ form{
     border: none;
   }
   .btn{
+    font-family: xxbold;
     padding: 9px 70px;
     color:hsl(0, 0%, 13%);
     outline: none;
@@ -88,7 +117,7 @@ form{
     align-items: center;
     cursor: pointer;
     position: absolute;
-    left: 70px;
+    left: 64px;
     margin-top: 25px;
     transition: 0.5s;
     border-radius: 45px;
@@ -99,25 +128,32 @@ form{
              border: none;
 }
 .btn:hover{
+    font-family: xxbold;
     background: linear-gradient(160deg, #ffa860, #ff8454);
     box-shadow: none;
 }
 .icon-container{
+    transition : 300ms ease-in;
+    transform: translateY(0);
     position: absolute;
     display: flex;
     justify-content: center;
     gap: 10px;
     bottom: 70px;
-    left: 95px;
+    left: 92px;
+
+}
+.icon-container :hover{
+    box-shadow: none;
 }
 .icon-box1{
     width:40px;
     height: 40px;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(233, 233, 233);;
     border-radius:50%;
     position: relative;
-    box-shadow:  3px 6px 15px #8f8f8f,
-                -6px -6px 15px #ffffff;
+    box-shadow:  5px 4px 19px #797979,
+                -5px -4px 20px #ffffff;
 }
 .icon-box2{
     width:40px;
@@ -125,8 +161,8 @@ form{
     background-color: rgb(233, 233, 233);
     border-radius:50%;
     position: relative;
-    box-shadow:  3px 6px 15px #8f8f8f,
-                -3px -6px 15px #ffffff;
+    box-shadow:  5px 4px 19px #797979,
+                -5px -4px 20px #ffffff;
 }
 .icon-box3{
     width:40px;
@@ -134,14 +170,14 @@ form{
     background-color: rgb(233, 233, 233);
     border-radius:50%;
     position: relative;
-    box-shadow:  3px 6px 15px #8f8f8f,
-                -3px -6px 15px #ffffff;
+    box-shadow:  5px 4px 19px #797979,
+                -5px -4px 20px #ffffff;
 }
 img{
     width:30px;
     position: absolute;
-    left: 5px;
-    top: 5px;   
+    left:5px;
+    top: 6px;   
 }
 .underline{
     width: 400px;
@@ -151,14 +187,4 @@ img{
     position: absolute;
     bottom: 120px;
     right: 0;
-}
-
-p{
-    position: absolute; 
-    bottom: -5px;
-    left: 93px;
-}
-a{
-    text-decoration: none;
-    color: rgb(255, 72, 0);
 }
