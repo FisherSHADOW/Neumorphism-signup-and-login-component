@@ -203,8 +203,9 @@ img{
     font-family: xbold;
     color: hsl(0, 0%, 24%);
     position: absolute;
-    bottom: 20px;
-    left:710px;
+    bottom: 60px;
+    left:900px;
+    text-decoration: underline;
 }
 .attribution a{
     color: hsl(0, 0%, 24%);
