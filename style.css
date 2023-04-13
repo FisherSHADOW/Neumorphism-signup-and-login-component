@@ -1,17 +1,27 @@
+body{
+    background: #f3f3f3;
+    overflow: hidden;
+}
 .signup-container{
     width: 400px;
     height: 500px;
     margin: auto;
     text-align: center;
-    background-color: aquamarine;
     position: relative;
     top: 100;
+    border-radius: 26px;
+    border-radius: 20px;
+    border-radius: 44px;
+    background: linear-gradient(45deg, #ffffff, #d4d4d4);
+    box-shadow:  9px -9px 18px #9c9c9c,
+                 -9px 9px 18px #afafaf;
 }
+/* title */
 h1{
     text-align: left;
-    margin-left: 20px;
-    padding-top: 20px;
-    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
     
 }
 form{
@@ -22,6 +32,8 @@ form{
     display: flex;
     flex-direction: column; */
     gap: 10px;
+    margin-top: 30;
+
 }
   .form-container{
     position: absolute;
@@ -31,41 +43,122 @@ form{
     display: flex-box;
     flex-direction: column;
     padding: 50;
-    background-color: blueviolet;
   }
   :placeholder-shown{
-    padding: 7px 20px;
+    width: 200px;
+    height: 25px;
+    padding-left: 15px;
     display: flex;
-    margin-left: 55px;
-    margin-top: 35px;
+    margin-left:45px;
+    margin-top: 25px;
+    text-align: left;
+    border-radius: 20px;
+    background: #90ffffd0;
+    box-shadow: inset 7px 7px 14px #5f5757,
+            inset -7px -7px 14px #ffffff;
   }
   input{
-    padding: 7px 20px;
+    caret-color: rgb(255, 72, 0);
+    background: #88c1ec;
+    color: rgb(24, 24, 24);
+    outline: none;
+    width: 205px;
+    height: 25px;
+    position: relative;
+    padding: 5px 10px;
     display: flex;
-    margin-left: 55px;
-    margin-top: 35px;
+    margin-left: 45px;
+    margin-top: 25px;
+    border-radius: 20px;
+    background: #5bffd6;
+    box-shadow: inset 7px 7px 14px #5f5757,
+            inset -7px -7px 14px #ffffff;
+    border: none;
+  }
+  input::placeholder{
+    color: gray;
+    border: none;
   }
   .btn{
-    padding: 10px 70px;
-    color:hsl(0, 0%, 100%);;
-    background-color: hsl(224, 30%, 27%);
-    border: 1px solid rgb(36,33,202);
-    /* border-radius: 35px; */
+    padding: 9px 70px;
+    color:hsl(0, 0%, 13%);
+    outline: none;
     transition : 300ms ease-in;
     transform: translateY(0);
     align-items: center;
     cursor: pointer;
     position: absolute;
     left: 70px;
+    margin-top: 25px;
+    transition: 0.5s;
+    border-radius: 45px;
+    border-radius: 38px;
+    background: linear-gradient(160deg, #ff8454, #ffa860);
+    box-shadow:  5px 4px 19px #797979,
+             -5px -4px 20px #ffffff;
+             border: none;
 }
 .btn:hover{
-    transition : 300ms ease-out;
-    transform: translateY(0);
-    background: rgb(36,33,202);
-    background: linear-gradient(360deg, rgba(36,33,202,1) 0%, rgba(78,33,202,1) 100%);
-    border: 1px solid rgb(36,33,202);
-    color: white;
+    background: linear-gradient(160deg, #ffa860, #ff8454);
+    box-shadow: none;
 }
-  
-  
-  
+.icon-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    bottom: 70px;
+    left: 95px;
+}
+.icon-box1{
+    width:40px;
+    height: 40px;
+    background-color: rgb(233, 233, 233);
+    border-radius:50%;
+    position: relative;
+    box-shadow:  3px 6px 15px #8f8f8f,
+                -6px -6px 15px #ffffff;
+}
+.icon-box2{
+    width:40px;
+    height: 40px;
+    background-color: rgb(233, 233, 233);
+    border-radius:50%;
+    position: relative;
+    box-shadow:  3px 6px 15px #8f8f8f,
+                -3px -6px 15px #ffffff;
+}
+.icon-box3{
+    width:40px;
+    height: 40px;
+    background-color: rgb(233, 233, 233);
+    border-radius:50%;
+    position: relative;
+    box-shadow:  3px 6px 15px #8f8f8f,
+                -3px -6px 15px #ffffff;
+}
+img{
+    width:30px;
+    position: absolute;
+    left: 5px;
+    top: 5px;   
+}
+.underline{
+    width: 400px;
+    border-top: 1px solid rgb(105, 105, 105);
+
+    opacity: 0.4;
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+}
+
+p{
+    position: absolute; 
+    bottom: -5px;
+    left: 93px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 72, 0);
+}
