@@ -31,7 +31,7 @@ body{
     border-radius: 44px;
     background: linear-gradient(45deg, #dfdfdf, #ffffff);
     box-shadow:  9px -9px 18px #9c9c9c,
-                 -9px 9px 18px #afafaf;
+    -9px 9px 18px #afafaf;
 }
 /* title */
 h1{
@@ -81,7 +81,7 @@ form{
     text-align: left;
     border-radius: 20px;
     box-shadow: inset 7px 7px 14px #5f5757,
-            inset -7px -7px 14px #ffffff;
+    inset -7px -7px 14px #ffffff;
   }
   input{
     font-family: xbold;
@@ -98,7 +98,7 @@ form{
     margin-top: 25px;
     border-radius: 20px;
     box-shadow: inset 7px 7px 14px #5f5757,
-            inset -7px -7px 14px #ffffff;
+    inset -7px -7px 14px #ffffff;
     border: none;
   }
   input::placeholder{
@@ -121,8 +121,8 @@ form{
     border-radius: 38px;
     background: linear-gradient(160deg, #ff8454, #ffa860);
     box-shadow:  5px 4px 19px #797979,
-             -5px -4px 20px #ffffff;
-             border: none;
+    -5px -4px 20px #ffffff;
+    border: none;
 }
 .btn:hover{
     font-family: xxbold;
@@ -161,7 +161,7 @@ form{
     border-radius:50%;
     position: relative;
     box-shadow:  5px 4px 19px #797979,
-                -5px -4px 20px #ffffff;
+    -5px -4px 20px #ffffff;
 }
 .icon-box3{
     width:40px;
@@ -170,7 +170,7 @@ form{
     border-radius:50%;
     position: relative;
     box-shadow:  5px 4px 19px #797979,
-                -5px -4px 20px #ffffff;
+    -5px -4px 20px #ffffff;
 }
 img{
     width:30px;

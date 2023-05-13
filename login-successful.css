@@ -14,8 +14,6 @@
     font-family: xthin ;
     src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-ExtraLight.ttf);
 }
-
-
 body{
     background: #dadada;
     overflow: hidden;
@@ -33,22 +31,90 @@ body{
     border-radius: 44px;
     background: linear-gradient(45deg, #dfdfdf, #ffffff);
     box-shadow:  9px -9px 18px #9c9c9c,
-                 -9px 9px 18px #afafaf;
+    -9px 9px 18px #afafaf;
 }
 /* title */
 h1{
     font-family: xregular;
-    color: #242424;
-    text-align: left;
+    font-size: 35px;
+    color: #495057;
+    text-align: center;
     margin-left: 10px;
-    padding-top: 10px;
-    margin-top: 60px;
+    padding-top: 100px;
+    line-height: 60px;
 }
+/* explore button */
+.box {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: #ff8454;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #ffa860;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: #495057;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
 /* footer text */
 p{
     position: absolute; 
     bottom: -5px;
-    left: 95px;
+    left: 85px;
     font-family: xthin;
     font-size: 14px;
 }
@@ -57,16 +123,13 @@ a{
     color: rgb(255, 72, 0);
 }
 /* main form */
-
 form{
-    position: absolute;
-    top: 130px;
     width: 300px;
     height: 500px;
     gap: 10px;
-
+    margin-top: 30;
 }
-  .form-container{
+  .container{
     position: absolute;
     width: 80%;
     height: 100%;
@@ -74,6 +137,8 @@ form{
     display: flex-box;
     flex-direction: column;
     padding: 50;
+    border-radius: 21px;
+
   }
   :placeholder-shown{
     font-family: xbold;
@@ -86,7 +151,7 @@ form{
     text-align: left;
     border-radius: 20px;
     box-shadow: inset 7px 7px 14px #5f5757,
-            inset -7px -7px 14px #ffffff;
+    inset -7px -7px 14px #ffffff;
   }
   input{
     font-family: xbold;
@@ -103,7 +168,7 @@ form{
     margin-top: 25px;
     border-radius: 20px;
     box-shadow: inset 7px 7px 14px #5f5757,
-            inset -7px -7px 14px #ffffff;
+    inset -7px -7px 14px #ffffff;
     border: none;
   }
   input::placeholder{
@@ -122,7 +187,6 @@ form{
     position: absolute;
     left: 64px;
     margin-top: 25px;
-    transition: 0.5s;
     border-radius: 45px;
     border-radius: 38px;
     background: linear-gradient(160deg, #ff8454, #ffa860);
@@ -136,16 +200,15 @@ form{
     box-shadow: none;
 }
 /* icons */
-.icon-container{
+.icon-container{    
     transition : 300ms ease-in;
-    transform: translateY(0);
+    transform: translateY();
     position: absolute;
     display: flex;
     justify-content: center;
     gap: 15px;
     bottom: 70px;
     left: 80px;
-
 }
 .icon-container :hover{
     box-shadow: none;
@@ -159,7 +222,7 @@ form{
     border-radius:50%;
     position: relative;
     box-shadow:  5px 4px 19px #797979,
-    -5px -4px 20px #ffffff;
+                -5px -4px 20px #ffffff;
 }
 .icon-box2{
     width:40px;
@@ -184,6 +247,7 @@ img{
     position: absolute;
     left:5px;
     top: 6px;   
+    
 }
 .underline{
     width: 400px;
